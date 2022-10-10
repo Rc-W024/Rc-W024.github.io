@@ -122,10 +122,7 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 
 #profile .portrait {
     background-image        : url(../images/wu404.png);
-    width                   : 125px;
     margin                  : 0 auto;
-    height                  : 125px;
-    border-radius           : 50%;
     -webkit-background-size : cover;
     -moz-background-size    : cover;
     background-size         : cover;
