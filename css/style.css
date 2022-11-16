@@ -5,7 +5,12 @@ body {
     font-family : Georgia, sans-serif;
     font-weight : 400;
     background  : #4D4D4D;
+    overflow    : hidden;}
 }
+
+html{
+    /*overflow-y : scroll;*/
+    overflow     : auto; }
 
 a, a:hover, a:focus {
     text-decoration : none;
