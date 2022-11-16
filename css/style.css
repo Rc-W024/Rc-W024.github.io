@@ -8,9 +8,8 @@ body {
     overflow    : hidden;
 }
 
-a { color: #1B6BD7; }
-
 a, a:hover, a:focus {
+    color           : #1B6BD7;
     text-decoration : none;
     outline         : 0;
 }
