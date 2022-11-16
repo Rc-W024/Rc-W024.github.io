@@ -186,7 +186,7 @@ ul#navigation li.currentmenu a {
 }
 
 ul#navigation li.external:hover .icon, ul#navigation li.currentmenu .icon {
-    color : #37A7F9;
+    color : #0077C8;
 }
 
 ul#navigation li.currentmenu {
@@ -421,11 +421,6 @@ ul.ul-card li .dy .year {
 }
 
 ul.ul-card li .description p {
-    font-size : 16px;
-    margin    : 0;
-}
-
-ul.ul-card li1 .description p {
     font-size : 16px;
     margin    : 0;
 }
