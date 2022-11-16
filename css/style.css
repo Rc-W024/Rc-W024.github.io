@@ -427,6 +427,11 @@ ul.ul-card li .description p {
     margin    : 0;
 }
 
+ul.ul-card li .description p.where {
+    font-weight : 300;
+    font-size   : 14px;
+}
+
 /* ul-dates
  **************************************************/
 ul.ul-dates, ul.ul-dates-gray {
