@@ -421,7 +421,7 @@ ul.ul-card li .dy .degree {
 
 ul.ul-card li .dy .year {
     /*background-color: #37A7F9;*/
-    -webkit-box-shadow : -3px 0px 7px -3px rgba(68, 68, 68, 0.5);
+    /* -webkit-box-shadow : -3px 0px 7px -3px rgba(68, 68, 68, 0.5);*/
     box-shadow         : 1px 0px 10px 0px rgba(68, 68, 68, 0.5);
     margin-left        : -4px !important;
 }
