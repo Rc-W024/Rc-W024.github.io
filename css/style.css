@@ -396,7 +396,7 @@ ul.ul-card li {
 
 ul.ul-card li1 {
     position           : relative;
-    padding            : 20px 15px 20px 15px;
+    padding            : 50px 15px 20px 15px;
     background-color   : #fff;
     margin-bottom      : 15px;
     -webkit-box-shadow : 0px 3px 3px -3px #ccc;
@@ -433,6 +433,11 @@ ul.ul-card li .dy .year {
 }
 
 ul.ul-card li .description p {
+    font-size : 16px;
+    margin    : 0;
+}
+
+ul.ul-card li1 .description p {
     font-size : 16px;
     margin    : 0;
 }
