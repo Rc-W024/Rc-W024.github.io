@@ -1133,7 +1133,7 @@ ul.timeline li .date {
     background: #0077C8;
 }
 ul.timeline li.open .date {
-    background: #3C92CF;
+    background: #001954;
 }
 ul.timeline li .data {
     border-left-color: #0077C8;
@@ -1160,22 +1160,22 @@ ul.timeline li .data {
 /* socpndary color
 **************************************************/
 ul.ul-card li .dy .degree {
-    background-color: #3C92CF;
+    background-color: #001954;
 }
 ul.ul-dates div.dates span:last-child {
-    background-color: #3C92CF;
+    background-color: #001954;
 }
 ul.timeline li.open .circle {
-    background-color: #3C92CF;
+    background-color: #001954;
 }
 ul.timeline li.open .data {
-    border-color: #3C92CF;
+    border-color: #001954;
 }
 #labp-heads-wrap {
-    background-color: #3C92CF;
+    background-color: #001954;
 }
 #labp-heads-wrap:after{
-    border-top-color: #3C92CF;
+    border-top-color: #001954;
 }
 
 li.blog * {
