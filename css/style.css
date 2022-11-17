@@ -5,7 +5,10 @@ body {
     font-family : Georgia, sans-serif;
     font-weight : 400;
     background  : #4D4D4D;
-    overflow    : hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -78,9 +81,9 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
     top        : 0;
     bottom     : 0;
     background : #fefefe;
-    overflow   : hidden;
+    /*overflow   : hidden;
     overflow-y : scroll;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;*/
 }
 
 .page {
