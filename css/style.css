@@ -9,26 +9,26 @@ body {
 
 ::-webkit-scrollbar {
     /*display: none;*/
-    width: 10px;
+    width  : 10px;
   }
 
 ::-webkit-scrollbar-track {
-    background: rgb(179, 177, 177);
+    background   : #E0dEdE;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #E6E6E6;
+    background   : #E6E6E6;
     border-radius: 10px;
   }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #565656;
+    background   : #565656;
     border-radius: 10px;
   }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #002323;
+    background   : #002323;
     border-radius: 10px;
   }
 
