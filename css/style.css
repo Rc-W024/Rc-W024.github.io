@@ -18,17 +18,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background   : #757575;
+    background   : #B9B9B9;
     border-radius: 10px;
   }
 
 ::-webkit-scrollbar-thumb:hover {
-    background   : #565656;
+    background   : #757575;
     border-radius: 10px;
   }
 
 ::-webkit-scrollbar-thumb:active {
-    background   : #002323;
+    background   : #565656;
     border-radius: 10px;
   }
 
