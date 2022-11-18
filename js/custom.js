@@ -60,12 +60,3 @@ $(document).ready(function () {
     }
 
 });
-
-if(navigator.appVersion.indexOf(";")>=0) {
-	var b_version = navigator.appVersion.split(";");
-	if (b_version != "undefined") {
-		var trim_version = b_version[1].replace([/[ ]/g, ""]);
-		if ((navigator.appName == "Microsoft Internet Explorer" && trim_version == "MSIE6.0") || (navigator.appName == "Microsoft Internet Explorer" && trim_version == "MSIE7.0")) {$(".ie-tips").show;}
-		else {$(".ie-tips").hide;}
-	}
-}
