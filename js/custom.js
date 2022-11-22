@@ -18,7 +18,7 @@ $(document).ready(function () {
     $(".social-icons, #main-nav a, #main").on("click", function () {
         SidebarAnim.reverse();
         SidebarAnim.isOpen = false;
-        setMenuColor($(this).attr("href"));
+        setMenuColor($(this));
     });
 
     $("ul.timeline").children().eq(0)
