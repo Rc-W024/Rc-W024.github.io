@@ -36,27 +36,4 @@ $(document).ready(function () {
         wheelSpeed       : 50
     });
 
-    function setMenuColor(hash) {
-        var loc = window.location.href;
-
-        if (hash || loc.indexOf('#') > 0) {
-            var hash = hash ? hash : loc.substring(loc.indexOf('#')),
-                par = $('a[href="' + hash + '"]').parent(),
-                sib = par.siblings();
-
-            for (var i = 0; i < sib.length; ++i) {
-                var elem = $(sib[i]);
-                if (!elem.hasClass('external')) {
-                    elem.removeClass();
-                }
-            }
-            if (!par.hasClass('external')) {
-                par.addClass('currentmenu');
-            }
- 		ga('send', 'pageview', {
-		 'page': location.pathname + location.search  + location.hash
-		});
-        }
-    }
-
 });
