@@ -5,6 +5,7 @@ body {
     font-family : Georgia, sans-serif;
     font-weight : 400;
     background  : #4D4D4D;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
