@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     $("#main-nav").perfectScrollbar({
         wheelPropagation : true,
-        wheelSpeed       : 50
+        wheelSpeed       : 10
     });
     
     function setMenuColor(hash) {
