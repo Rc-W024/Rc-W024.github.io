@@ -54,7 +54,7 @@ $(document).ready(function () {
                 par.addClass('currentmenu');
             }
  		ga('send', 'pageview', {
-		 'page': location.pathname + location.search  + location.hash
+		 'page': location.pathname + location.search
 		});
         }
     }
