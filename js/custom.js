@@ -14,7 +14,12 @@ $(document).ready(function () {
             SidebarAnim.isOpen = true;
         }
     });
-
+	
+    $(".social-icons, #main-nav a, #main").on("click", function () {
+        SidebarAnim.reverse();
+        SidebarAnim.isOpen = false;
+        setMenuColor($(this).attr("href"));
+    });
 
     $("ul.timeline").children().eq(0)
         .find(".text").slideDown()
