@@ -19,7 +19,7 @@ $(document).ready(function () {
         SidebarAnim.isOpen = false;
 	var par = $(this).parent();
         var sib = par.siblings();
-        for(var i=0;i<sib.length;i++){
+        for(var i=0; i<sib.length; i++){
 		var elem = $(sib[i]);
         	if (!elem.hasClass('external')) {
                 	elem.removeClass();
