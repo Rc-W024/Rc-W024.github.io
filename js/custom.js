@@ -17,11 +17,23 @@ $(document).ready(function () {
     $(".social-icons, #main-nav a, #main").on("click", function () {
         SidebarAnim.reverse();
         SidebarAnim.isOpen = false;
+        for(var i=0;i<document.getElementsByTagName("currentmenu").length;i++){
+            document.getElementsByTagName("currentmenu")[i].onclick=function(){
+                for(var j=0;j<document.getElementsByTagName("currentmenu").length;j++){
+                    if(this==document.getElementsByTagName("currentmenu")[j]){
+                        this.className="external";
+                    }else{
+                        document.getElementsByTagName("currentmenu")[j].className="";
+                    }
+                }   
+            }
+        }
     });
 
     $("ul.timeline").children().eq(0)
         .find(".text").slideDown()
         .addClass("open");
+	
     $("ul.timeline").on("click", "li", function () {
         $this = $(this);
         $this.find(".text").slideDown();
