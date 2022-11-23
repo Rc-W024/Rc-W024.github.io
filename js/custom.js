@@ -22,13 +22,12 @@ $(document).ready(function () {
         for(var i=0;i<sib.length;i++){
 		var elem = $(sib[i]);
         	if (!elem.hasClass('external')) {
-                    elem.removeClass();
+                	elem.removeClass();
                 }
-            }
-            if (!par.hasClass('external')) {
-                par.addClass('currentmenu');
-            }
         }
+	if (!par.hasClass('external')) {
+		par.addClass('currentmenu');
+	}
     });
 
     $("ul.timeline").children().eq(0)
