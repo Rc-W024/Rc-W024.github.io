@@ -17,17 +17,7 @@ $(document).ready(function () {
     $(".social-icons, #main-nav a, #main").on("click", function () {
         SidebarAnim.reverse();
         SidebarAnim.isOpen = false;
-        for(var i=0;i<document.getElementsByTagName("currentmenu").length;i++){
-            document.getElementsByTagName("currentmenu")[i].onclick=function(){
-                for(var j=0;j<document.getElementsByTagName("currentmenu").length;j++){
-                    if(this==document.getElementsByTagName("currentmenu")[j]){
-                        this.className="external";
-                    }else{
-                        document.getElementsByTagName("currentmenu")[j].className="";
-                    }
-                }   
-            }
-        }
+        $(this).addClass('external').siblings().removeClass();
     });
 
     $("ul.timeline").children().eq(0)
