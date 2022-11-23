@@ -17,7 +17,18 @@ $(document).ready(function () {
     $(".social-icons, #main-nav a, #main").on("click", function () {
         SidebarAnim.reverse();
         SidebarAnim.isOpen = false;
-        $(this).addClass("currentmenu").removeClass();
+	var par = $(this).parent();
+        var sib = par.siblings();
+        for(var i=0;i<sib.length;i++){
+		var elem = $(sib[i]);
+        	if (!elem.hasClass('external')) {
+                    elem.removeClass();
+                }
+            }
+            if (!par.hasClass('external')) {
+                par.addClass('currentmenu');
+            }
+        }
     });
 
     $("ul.timeline").children().eq(0)
