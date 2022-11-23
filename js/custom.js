@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(".social-icons, #main-nav a, #main").on("click", function () {
         SidebarAnim.reverse();
         SidebarAnim.isOpen = false;
-        $(this).addClass('currentmenu').siblings().removeClass();
+        $(this).addClass("currentmenu").siblings().removeClass();
     });
 
     $("ul.timeline").children().eq(0)
