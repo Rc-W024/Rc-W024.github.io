@@ -55,16 +55,16 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 }
 
 footer {
-	padding:50px 0 65px
+	padding:50px 0 65px;
 }
 
 footer .list-inline{
-	margin:0;
-	padding:0;
+	margin : 0;
+	padding: 0;
 }
 
 footer .copyright{
-	font-size:smaller;
+	font-size:12px;
 	margin-bottom:0;
 	text-align:center;
 }
