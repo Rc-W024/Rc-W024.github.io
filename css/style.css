@@ -1217,6 +1217,9 @@ ul.timeline li.open .circle {
 ul.timeline li.open .data {
     border-color: #001954;
 }
+ul.timeline li.open .subject {
+    color: black;
+}
 #labp-heads-wrap {
     background-color: #001954;
 }
