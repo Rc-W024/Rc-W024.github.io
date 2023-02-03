@@ -277,7 +277,7 @@ list-style: none;
 
 .social-icons li {
 float: left;
-width: 40%;
+width: 33%;
 padding: 10px;
 text-align: center;
 }
@@ -291,7 +291,7 @@ color: #fff;
 }
 
 .social-icons i {
-font-size: 16px;
+font-size: 20px;
 }
 
 /* page specifics
