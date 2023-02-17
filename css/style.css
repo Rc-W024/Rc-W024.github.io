@@ -407,6 +407,17 @@ font-size: 20px;
     box-shadow:0 0 10px rgba(0,0,0,0.25);
 }
 
+.oa i {
+    position        : relative;
+    display         : inline-block;
+    width           : 16px;
+    height          : 16px;
+    top             : 3px;
+    background-image: url(/img/oa_logo.png);
+    background-size : cover;
+    color           : #f68212;
+}
+
 /*************************************************
  *  uls
  **************************************************/
