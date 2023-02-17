@@ -404,10 +404,10 @@ font-size: 20px;
 }
 
 .imghov:hover {
-    box-shadow:0 0 10px rgba(0,0,0,0.25);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 
-.oa {
+#oa {
     position        : relative;
     display         : inline-block;
     width           : 16px;
