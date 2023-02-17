@@ -413,7 +413,7 @@ font-size: 20px;
     width           : 16px;
     height          : 16px;
     top             : 3px;
-    background-image: url(/img/oa_logo.png);
+    background-image: url(/images/oa_logo.png);
     background-size : cover;
     color           : #f68212;
 }
