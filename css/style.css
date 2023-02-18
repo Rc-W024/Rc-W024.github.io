@@ -1237,7 +1237,7 @@ ul.timeline li.open .data {
     border-color: #001954;
 }
 ul.timeline li.open .subject i {
-    color: #193154;
+    color: #193154 !important;
 }
 ul.timeline li.open .subject {
     color: black;
