@@ -1236,10 +1236,10 @@ ul.timeline li.open .circle {
 ul.timeline li.open .data {
     border-color: #001954;
 }
-ul.timeline li.open > data > .subject i {
+ul.timeline li.open .data .subject i {
     color: #193154;
 }
-ul.timeline li.open > data > .subject {
+ul.timeline li.open .data .subject {
     color: black;
 }
 #labp-heads-wrap {
