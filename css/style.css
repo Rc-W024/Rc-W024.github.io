@@ -610,6 +610,11 @@ ul.timeline li.open .data {
     background : #fff;
 }
 
+ul.timeline li .data .subject i {
+    color     : #777;
+    font-size : 18px;
+}
+
 ul.timeline li .data .subject {
     cursor    : pointer;
     color     : #777;
@@ -1231,11 +1236,11 @@ ul.timeline li.open .circle {
 ul.timeline li.open .data {
     border-color: #001954;
 }
+ul.timeline li.open .subject i {
+    color: #193154;
+}
 ul.timeline li.open .subject {
     color: black;
-}
-ul.timeline li.open .subject .fa-solid {
-    color: #193154;
 }
 #labp-heads-wrap {
     background-color: #001954;
