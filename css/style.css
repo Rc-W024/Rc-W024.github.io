@@ -1234,7 +1234,7 @@ ul.timeline li.open .data {
 ul.timeline li.open .subject {
     color: black;
 }
-ul.timeline li.open .subject .i {
+ul.timeline li.open .subject fa {
     color: #193154;
 }
 #labp-heads-wrap {
