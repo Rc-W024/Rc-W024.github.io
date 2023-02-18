@@ -1240,7 +1240,7 @@ ul.timeline li.open .subject i {
     color: #193154 !important;
 }
 ul.timeline li.open .subject {
-    color: black;
+    color: black  !important;
 }
 #labp-heads-wrap {
     background-color: #001954;
