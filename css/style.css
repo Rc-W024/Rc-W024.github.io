@@ -35,8 +35,8 @@ body {
 
 #background {
     position                         : absolute;
-    left                             : -180px;
-    width                            : 145%;
+    left                             : -165px;
+    width                            : 80vh;
     animation-name                   : fadeIn, rotate;
     animation-duration               : 5s, 360s;
     animation-iteration-count        : 1, infinite;
@@ -51,12 +51,10 @@ body {
     -moz-animation-timing-function   : linear, linear;
 }
 
- /*
 @media (max-width: 1260px) {
     #background {
     opacity: .3; }
 }
- */
 
 @media (max-width: 960px) {
     #background {
