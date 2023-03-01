@@ -30,7 +30,11 @@ body {
 }
 
 .home-top {
-  margin-top: 120px;
+  margin-top: 50px;
+  position: relative;
+  height: 100vh;
+  background-image: url(images/binary.png);
+  background-size: cover;
 }
 
 #background {
@@ -338,6 +342,7 @@ font-size: 20px;
  **************************************************/
 .page-container {
     position : relative;
+    z-index  : 1;
 }
 
 .pageheader {
