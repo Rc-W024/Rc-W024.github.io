@@ -34,12 +34,7 @@ body {
 }
 
 #background {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 50%;
-   height: 100%;
-   z-index: -1;
+   width                            : 100%;
    animation-name                   : fadeIn, rotate;
    animation-duration               : 5s, 360s;
    animation-iteration-count        : 1, infinite;
