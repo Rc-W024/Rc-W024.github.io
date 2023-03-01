@@ -8,7 +8,7 @@ body {
     scroll-behavior: smooth;
 }
 
-section.home-top .background {
+.home-top .background {
     animation-name: fadeIn, rotate;
     animation-duration: 5s, 360s;
     animation-iteration-count: 1, infinite;
