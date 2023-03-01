@@ -8,7 +8,28 @@ body {
     scroll-behavior: smooth;
 }
 
-.home-top .background {
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); }
+}
+
+#background {
     animation-name: fadeIn, rotate;
     animation-duration: 5s, 360s;
     animation-iteration-count: 1, infinite;
