@@ -33,7 +33,7 @@ body {
   margin-top: 120px;
 }
 
-.home-top .background {
+.home-top img#background {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -43,10 +43,10 @@ body {
     background-repeat: no-repeat;
     z-index: -2; }
     @media (max-width: 1260px) {
-      section.home-top .background {
+      .home-top img#background {
         opacity: .3; } }
     @media (max-width: 960px) {
-      section.home-top .background {
+      .home-top img#background {
         display: none; }
 }
 
