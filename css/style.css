@@ -51,6 +51,12 @@ body {
     -moz-animation-timing-function   : linear, linear;
 }
 
+@media only screen and (max-width: 768px) {
+  #background {
+    display: none;
+  }
+}
+
 ::-webkit-scrollbar {
     /*display    : none;*/
     width        : 10px;
