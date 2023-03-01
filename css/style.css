@@ -33,23 +33,6 @@ body {
   margin-top: 120px;
 }
 
-.home-top img#background {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    left: 0;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2; }
-    @media (max-width: 1260px) {
-      .home-top img#background {
-        opacity: .3; } }
-    @media (max-width: 960px) {
-      .home-top img#background {
-        display: none; }
-}
-
 #background {
     animation-name: fadeIn, rotate;
     animation-duration: 5s, 360s;
