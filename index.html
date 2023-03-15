@@ -57,13 +57,13 @@ mixpanel.init("ebfda33a74d82c326f768bb95f1db5ab");</script><!-- end Mixpanel -->
                         </div>
                         <ul id="navigation">
                             <li class="currentmenu">
-                              <a href="" onclick="document.querySelector('#biography').scrollIntoView({behavior:'smooth'})">
+                              <a href="#" onclick="event.preventDefault();document.querySelector('#biography').scrollIntoView({behavior:'smooth'})">
                                   <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
                                 <div class="text">Main</div>
                               </a>
                             </li>  
                             <li>
-                              <a href="" onclick="document.querySelector('#education').scrollIntoView({behavior:'smooth'})">
+                              <a href="javascript:void(0)" onclick="document.querySelector('#education').scrollIntoView({behavior:'smooth'})">
                                 <div class="icon"><i class="fa fa-university"></i></div>
                                 <div class="text">Education</div>
                               </a>
