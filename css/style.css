@@ -478,6 +478,16 @@ font-size: 20px;
     background-size  : cover;
 }
 
+#closedoa {
+    position         : relative;
+    display          : inline-block;
+    width            : 16px;
+    height           : 16px;
+    top              : 3px;
+    background-image : url(/images/no_oa.png);
+    background-size  : cover;
+}
+
 /*************************************************
  *  uls
  **************************************************/
