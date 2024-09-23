@@ -1,4 +1,6 @@
 # Personal Homepage
+![](https://skillicons.dev/icons?i=html,js)
+
 Website: [**Rc-W024.github.io**](https://Rc-W024.github.io)
 
 ## Home
