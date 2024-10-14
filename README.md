@@ -1,5 +1,5 @@
 # Personal Homepage
-![](https://skillicons.dev/icons?i=html,js)
+![](https://skillicons.dev/icons?i=html,js,css)
 
 Website: [**Rc-W024.github.io**](https://Rc-W024.github.io)
 
