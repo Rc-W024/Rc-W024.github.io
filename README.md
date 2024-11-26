@@ -3,6 +3,8 @@
 
 Website: [**Rc-W024.github.io**](https://Rc-W024.github.io)
 
+**¡ÚLTIMA HORA DE LANZAMIENTO!**
+
 ## Home
 - Homepage corresponds to [`index.html`](https://github.com/Rc-W024/Rc-W024.github.io/blob/main/index.html)
 - The path to logos & avatar is `images/...`
