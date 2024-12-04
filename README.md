@@ -8,7 +8,6 @@ Website: [**Rc-W024.github.io**](https://Rc-W024.github.io)
 ## Home
 - Homepage corresponds to [`index.html`](https://github.com/Rc-W024/Rc-W024.github.io/blob/main/index.html)
 - The path to logos & avatar is `images/...`
-- New logo and avatar are now available！
 - The path of the page attachments is `pub/...`
 - Many thanks to [*RevolverMaps*](https://www.revolvermaps.com/), and the new plugin [*ClustrMaps*](https://clustrmaps.com/) has been enabled
 
