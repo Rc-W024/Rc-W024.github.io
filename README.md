@@ -13,3 +13,6 @@ Website: [**Rc-W024.github.io**](https://Rc-W024.github.io)
 
 ## Backup
 - Reserved space for later web data migration or archiving
+
+## Support
+Powered by [**GitHub** Pages](https://pages.github.com/).
