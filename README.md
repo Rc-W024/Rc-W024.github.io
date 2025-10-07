@@ -17,4 +17,4 @@ Website: [**Rc-W024.github.io**](https://Rc-W024.github.io)
 ## Support
 Powered by [**GitHub** Pages](https://pages.github.com/).
 
-Supported by [GitHub Pro](https://docs.github.com/zh/get-started/learning-about-github/githubs-plans#github-pro).
+Supported by [GitHub Pro](https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-pro).
