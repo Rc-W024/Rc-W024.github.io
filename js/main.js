@@ -10,6 +10,7 @@
         initTimelineAccordion();
         initCurrentSectionHighlight();
         initSmoothScrollFallback();
+        initStyleSwitcher();
     });
 
     function initSidebarToggle() {
@@ -148,5 +149,58 @@
         // CSS scroll-behavior as belt-and-braces, respecting reduced-motion.
         if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         document.documentElement.style.scrollBehavior = 'smooth';
+    }
+
+    function initStyleSwitcher() {
+        // Only render when ?style= is present (preview mode).
+        var current = new URLSearchParams(location.search).get('style');
+        if (!current) return;
+        var current_norm = ({ legacy: 1, academic: 1, tech: 1 })[current] ? current : 'legacy';
+
+        var styles = [
+            { key: 'legacy',   label: 'Legacy'   },
+            { key: 'academic', label: 'Academic' },
+            { key: 'tech',     label: 'Tech'     }
+        ];
+
+        var box = document.createElement('div');
+        box.id = 'style-switcher';
+        box.setAttribute('role', 'group');
+        box.setAttribute('aria-label', 'Theme preview');
+        box.innerHTML =
+            '<style>' +
+              '#style-switcher{position:fixed;right:16px;bottom:16px;z-index:9999;' +
+              'display:flex;gap:6px;padding:6px;border-radius:999px;' +
+              'background:rgba(20,22,30,0.85);backdrop-filter:blur(14px);' +
+              '-webkit-backdrop-filter:blur(14px);' +
+              'border:1px solid rgba(255,255,255,0.18);' +
+              'box-shadow:0 8px 30px rgba(0,0,0,0.35);' +
+              'font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:13px}' +
+              '#style-switcher button{appearance:none;border:0;cursor:pointer;' +
+              'padding:7px 14px;border-radius:999px;font:inherit;color:#cbd5e1;' +
+              'background:transparent;transition:background .15s,color .15s;min-height:34px}' +
+              '#style-switcher button:hover{color:#fff;background:rgba(255,255,255,0.08)}' +
+              '#style-switcher button[aria-pressed="true"]{' +
+              'background:linear-gradient(135deg,#5eead4,#6366f1);color:#0b1020;font-weight:600}' +
+              '#style-switcher button:focus-visible{outline:2px solid #5eead4;outline-offset:2px}' +
+              '@media (max-width:480px){#style-switcher{right:8px;bottom:8px;font-size:12px}' +
+              '#style-switcher button{padding:6px 10px}}' +
+            '</style>';
+
+        styles.forEach(function (s) {
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.textContent = s.label;
+            btn.dataset.style = s.key;
+            btn.setAttribute('aria-pressed', s.key === current_norm ? 'true' : 'false');
+            btn.addEventListener('click', function () {
+                var url = new URL(location.href);
+                url.searchParams.set('style', s.key);
+                location.href = url.toString();
+            });
+            box.appendChild(btn);
+        });
+
+        document.body.appendChild(box);
     }
 })();
