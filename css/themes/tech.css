@@ -1,0 +1,144 @@
+/* Tech theme — Phase 3 placeholder. Real implementation comes next.
+   For now, a dark base + glass cards so ?style=tech is recognizable. */
+
+:root[data-style="tech"] {
+    --bg: #0b1020;
+    --bg-elev: #11172a;
+    --fg: #e6edf3;
+    --muted: #8a96a8;
+    --border: rgba(255, 255, 255, 0.08);
+    --accent-1: #5eead4;
+    --accent-2: #6366f1;
+    --container-max: 1200px;
+    color-scheme: dark;
+}
+
+:root[data-style="tech"] body {
+    margin: 0;
+    background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(99, 102, 241, 0.18), transparent 60%),
+        radial-gradient(900px 500px at -10% 30%, rgba(94, 234, 212, 0.12), transparent 60%),
+        var(--bg);
+    color: var(--fg);
+    font-family: "Geist", "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    font-size: clamp(15px, 0.9rem + 0.15vw, 17px);
+}
+
+:root[data-style="tech"] h1,
+:root[data-style="tech"] h2,
+:root[data-style="tech"] h3 {
+    font-family: "Space Grotesk", "Geist", "Inter", system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+:root[data-style="tech"] a {
+    color: var(--accent-1);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+:root[data-style="tech"] a:hover {
+    color: #a7f3d0;
+    border-bottom-color: currentColor;
+}
+
+:root[data-style="tech"] .section,
+:root[data-style="tech"] .pageheader {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+:root[data-style="tech"] #sidebar {
+    background: linear-gradient(180deg, #0b1020, #050714) !important;
+    border-right: 1px solid var(--border);
+}
+
+:root[data-style="tech"] #profile .title h2,
+:root[data-style="tech"] #profile .title h3 {
+    color: var(--fg);
+}
+
+:root[data-style="tech"] #navigation a {
+    color: var(--muted);
+}
+
+:root[data-style="tech"] #navigation .currentmenu a,
+:root[data-style="tech"] #navigation a:hover {
+    color: var(--fg);
+    background: linear-gradient(135deg, rgba(94, 234, 212, 0.15), rgba(99, 102, 241, 0.15));
+}
+
+:root[data-style="tech"] .ul-card > li,
+:root[data-style="tech"] .timeline > li {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--fg);
+}
+
+:root[data-style="tech"] .ul-card .description p,
+:root[data-style="tech"] .timeline .text {
+    color: var(--fg);
+}
+
+:root[data-style="tech"] .ul-card .where {
+    color: var(--muted);
+}
+
+:root[data-style="tech"] .timeline .circle {
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    border: none;
+    box-shadow: 0 0 0 4px rgba(94, 234, 212, 0.15);
+}
+
+:root[data-style="tech"] .timeline .date {
+    color: var(--accent-1);
+    font-variant-numeric: tabular-nums;
+}
+
+:root[data-style="tech"] .label-default {
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    color: #0b1020;
+    font-weight: 600;
+}
+
+:root[data-style="tech"] .biothumb img {
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+:root[data-style="tech"] .biothumb .overlay {
+    background: linear-gradient(180deg, transparent, rgba(11, 16, 32, 0.85));
+    color: var(--fg);
+}
+
+:root[data-style="tech"] #background {
+    opacity: 0.15;
+    filter: hue-rotate(160deg);
+}
+
+:root[data-style="tech"] hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+}
+
+:root[data-style="tech"] .copyright,
+:root[data-style="tech"] footer * {
+    color: var(--muted) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root[data-style="tech"] *,
+    :root[data-style="tech"] *::before,
+    :root[data-style="tech"] *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

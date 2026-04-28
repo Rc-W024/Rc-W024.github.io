@@ -1,0 +1,144 @@
+/* Academic theme — Phase 2 placeholder. Real implementation comes next.
+   For now, a minimal one-column reset so ?style=academic at least renders. */
+
+:root[data-style="academic"] {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #7a1f2b;
+    --container-max: 760px;
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root[data-style="academic"] {
+        --bg: #0f1115;
+        --fg: #e6e6e6;
+        --muted: #9aa0a6;
+        --border: #2b2f36;
+        --accent: #d97f8b;
+        color-scheme: dark;
+    }
+}
+
+:root[data-style="academic"] body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Inter", "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    font-size: clamp(16px, 0.95rem + 0.1vw, 18px);
+}
+
+:root[data-style="academic"] h1,
+:root[data-style="academic"] h2,
+:root[data-style="academic"] h3,
+:root[data-style="academic"] h4 {
+    font-family: "Crimson Pro", "EB Garamond", Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+:root[data-style="academic"] a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+}
+
+:root[data-style="academic"] a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* Phase 2 will provide proper layout. The placeholder below ensures content
+   is reachable: hide the dark sidebar, collapse to single column. */
+:root[data-style="academic"] #sidebar {
+    display: none;
+}
+
+:root[data-style="academic"] #main {
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    max-width: var(--container-max);
+    width: auto;
+    left: 0;
+}
+
+:root[data-style="academic"] .home {
+    width: auto;
+}
+
+:root[data-style="academic"] .section,
+:root[data-style="academic"] .pageheader {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+:root[data-style="academic"] .section-container {
+    max-width: 100%;
+}
+
+:root[data-style="academic"] .row {
+    display: block;
+    margin: 0;
+}
+
+:root[data-style="academic"] [class*="col-"] {
+    width: 100%;
+    float: none;
+    padding: 0;
+}
+
+:root[data-style="academic"] img {
+    max-width: 100%;
+    height: auto;
+}
+
+:root[data-style="academic"] #background,
+:root[data-style="academic"] .home-top {
+    display: none;
+}
+
+:root[data-style="academic"] .biothumb {
+    max-width: 200px;
+    margin: 0 0 1.5rem;
+}
+
+:root[data-style="academic"] .biothumb img {
+    border-radius: 50%;
+}
+
+:root[data-style="academic"] .biothumb .overlay {
+    display: none;
+}
+
+:root[data-style="academic"] hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+}
+
+:root[data-style="academic"] .timeline > li {
+    list-style: none;
+    border-left: 2px solid var(--border);
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+:root[data-style="academic"] .timeline .circle {
+    display: none;
+}
+
+:root[data-style="academic"] .timeline .text {
+    display: block !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root[data-style="academic"] *,
+    :root[data-style="academic"] *::before,
+    :root[data-style="academic"] *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
